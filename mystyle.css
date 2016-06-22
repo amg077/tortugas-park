@@ -20,4 +20,56 @@ color:white;
 line-height: .01;
 }
 
+/*@media screen and (min-width: 768px) and (max-width: 900px) {
+
+	body{
+    /*background-size: 768px 1024px;*/
+    /*background-repeat: no-repeat;
+	}
+
+  h1{font-size:30px;}
+  h2{font-size:10px;}
+
+}/*cerramos primer query*/
+
+@media screen and (min-width: 437px) and (max-width: 895px) {
+
+  body{
+    /*background-size: 768px 1024px;*/
+    background-image:url('DSC_0006.jpg');
+    background-repeat: no-repeat;
+  }
+
+  h1{font-size:60px;}
+  h2{font-size:20px;}
+
+}
+
+@media screen and (min-width: 319px) and (max-width: 436px) {
+
+  body{
+    background-image:url('DSC_0006.jpg');
+  	background-size: 435px 773px;
+    background-repeat: no-repeat;	
+  }
+
+  h1{font-size:45px;}
+  h2{font-size:15px;}
+
+}/*cerramos segundo query */
+
+.container{
+  text-align:center;
+}
+
+button{
+  background-color: white;
+  border:none;
+  font-size:1.5em;
+}
+button:hover{
+  cursor:pointer;
+
+}
+
 
