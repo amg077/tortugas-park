@@ -1,7 +1,14 @@
-body{
+#home_body{
 background-image: url('IMG_0024.jpg');
 background-size: 100%;
 background-repeat: no-repeat;
+}
+
+#main_body{
+  background-image: url('thumb_IMG_5870_1024.jpg');
+  background-size:cover;
+  webkit-background-size:cover;
+  background-repeat: no-repeat;
 }
 
 h1{
