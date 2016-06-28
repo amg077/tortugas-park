@@ -1,3 +1,20 @@
+
+.sections{float:right;color:white;font-size: 2em;padding-right: .8em;font-family: "Arial Black";}
+.titles{color:white;padding-top: 5em;text-align:center;font-size:4em;font-family: "Arial Black";}
+
+
+
+img{
+  position:absolute;
+  z-index: -1;
+  width:100%;
+  height:100%;
+
+}
+#div{
+background-image: url('IMG_5821.jpg');  
+}
+
 #home_body{
 background-image: url('IMG_0024.jpg');
 background-size: 100%;
@@ -5,10 +22,16 @@ background-repeat: no-repeat;
 }
 
 #main_body{
-  background-image: url('thumb_IMG_5870_1024.jpg');
+  background-image: url('IMG_5821.jpg');
   background-size:cover;
-  webkit-background-size:cover;
+  -webkit-background-size:cover;
+  -moz-background-size:1000px 5000px;
+  -o-background-size:cover;
   background-repeat: no-repeat;
+}
+
+#first_div{
+  background-image: url('IMG_6516.jpg'); 
 }
 
 h1{
@@ -27,23 +50,11 @@ color:white;
 line-height: .01;
 }
 
-/*@media screen and (min-width: 768px) and (max-width: 900px) {
-
-	body{
-    /*background-size: 768px 1024px;*/
-    /*background-repeat: no-repeat;
-	}
-
-  h1{font-size:30px;}
-  h2{font-size:10px;}
-
-}/*cerramos primer query*/
-
 @media screen and (min-width: 437px) and (max-width: 895px) {
 
-  body{
+  #home_body{
     /*background-size: 768px 1024px;*/
-    background-image:url('DSC_0006.jpg');
+    background-image:url('DSC_0006.JPG');
     background-repeat: no-repeat;
   }
 
@@ -54,8 +65,8 @@ line-height: .01;
 
 @media screen and (min-width: 319px) and (max-width: 436px) {
 
-  body{
-    background-image:url('DSC_0006.jpg');
+  #home_body{
+    background-image:url('DSC_0006.JPG');
   	background-size: 435px 773px;
     background-repeat: no-repeat;	
   }
@@ -76,7 +87,6 @@ button{
 }
 button:hover{
   cursor:pointer;
-
 }
 
 
