@@ -1,10 +1,19 @@
 
 .sections{float:right;color:white;font-size: 2em;padding-right: .8em;font-family: "Arial Black";}
-.titles{color:white;padding-top: 5em;text-align:center;font-size:4em;font-family: "Arial Black";}
+.titles{color:white;padding-top: 5em;padding-bottom:5em;text-align:center;font-size:4em;font-family: "Arial Black";}
 
+/*a:link {color:white;}
+a:visited {color:white;}
+a:hover {color:white;}
+a:active {color:white;}
+div:hover {color:white;}
+div:active {color:white;}*/
+a:visited {color:white;}
 
-
-img{
+#location{
+  text-align:center;
+}
+.img1{
   position:absolute;
   z-index: -1;
   width:100%;
