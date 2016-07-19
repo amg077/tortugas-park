@@ -3,16 +3,18 @@
   <head>
     <link rel="stylesheet" href="mystyle.css">
   <body>
-    <div id="home">
-      
-      <div class="sections"><a href="#contact">Contact</a></div>
-      <div class="sections"><a href="#about">About</a></div>
-      <div class="sections"><a href="#location">Location</a></div>
-      <div class="sections">Home</div>
+   <div id="home">
+    <ul>
+      <>
+      <li class="sections tooltip"><span class="tooltiptext">Leave us a message</span><a href="#contact">Contact</a></li>  
+      <li class="sections tooltip"><span class="tooltiptext">A little bit about us</span><a href="#about">About</a></li> 
+      <li class="sections tooltip"><span class="tooltiptext">See the map</span><a href="#location">Location</a></li> 
+      <li class="sections tooltip"><span class="tooltiptext">Go back to top</span><a href="#">Home</a></li> 
+    </ul> 
       <h1 class="titles">100 KM OF FLOWERS, ANIMALS AND NATURE</h1>
     </div>
     <div id="location">
-      <h1>We are located in:</h1>
+      <h1>WE ARE LOCATED IN</h1>
       <h4>425 San Juan de Dios Avenue. Mexico City. Mexico. Zip:14357</h4>
       <div id="google-maps-canvas">
         <div style="text-decoration:none; overflow:hidden; height:500px; width:500px; max-width:100%;margin:auto">
@@ -26,21 +28,20 @@
     </div>
 
     <div id="about">
-      <p >Tortugas park was founded in 2014 in Mexico City.<br> Alexis Morales donated part of his fortune to preserve natural environments.</p>
+      <p >Tortugas park was founded in 2014 in Mexico City.</p>
+      <p>Alexis Morales donated part of his fortune to preserve natural environments.</p>
       <p >Located in the south of the city, several creatures are adopted and protected.</p>
       <p >By 2020, it pretends to be the biggest park in America.</p>
     </div>
-
-
     <div id="contact">
-      <h4>Feel free to contact us for any question you have</h4>
-      <form>
+      <h1>Feel free to contact us for any question you have</h1>
+     <form>
         <center>
         <textarea rows="10" cols="50"></textarea>
         <br>
-        <input type="submit">
+        <input type="submit" value="Send it">
         </center>
-      </form>
+    </form>
     </div>
   </body>
 </html>

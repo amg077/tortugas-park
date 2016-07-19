@@ -70,20 +70,21 @@ button:hover {
 /*MAIN*/
 
 #home {
-    background: linear-gradient( rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url('IMG_6516.JPG');
-    width:100%
-    height:100%;
-
+    background: linear-gradient( rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url('IMG_6516.JPG');
+    background-position: center;
 }
 
-
+#home ul{margin-top: 0;margin-bottom: 0; border-bottom: 0;padding-bottom: 0;}
 
 .sections {
     float: right;
     color: white;
     font-size: 2em;
     padding-right: .8em;
+    border-bottom: 0;
+    margin-bottom: 0;
     font-family: "Arial Black";
+    list-style-type: none;
 }
 
 .titles {
@@ -93,6 +94,38 @@ button:hover {
     text-align: center;
     font-size: 4em;
     font-family: "Arial Black";
+    border-bottom: 0;
+    margin-bottom: 0;
+}
+.tooltip .tooltiptext {
+visibility: hidden;
+width:120px;
+background-color: black;
+text-align: center;
+color:#fff;
+padding-bottom: .5em;
+position: absolute;
+z-index:1;
+top:10%;
+
+border-radius:6px;
+
+}
+
+.tooltip:hover .tooltiptext{
+    visibility: visible;
+    font-size: 12px;
+}
+
+.tooltip .tooltiptext::after {
+      content: " ";
+    position: absolute;
+    bottom: 100%;  /* At the top of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
 }
 
 .titles2 {
@@ -100,31 +133,58 @@ button:hover {
     text-align: center;
     font-size: 3em;
     font-family: "Arial Black";
-}
+     padding-top: 0;
+    margin-top: 0;
+    border-top: 0;
 
-a:visited {
+}
+a:visited , a:link {
     color: white;
+    text-decoration: none;
 }
 
 #location {
+    background-image:linear-gradient( rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)),url('IMG_0025.jpg');
     text-align: center;
-    padding-bottom: 3em;
-
+    padding-top: 0;
+    margin-top: 0;
+    border-top: 0;
+    background-color: black;
+    color:white;
+    padding-bottom: 4em;
+    background-size: cover;
 }
-#about {
-    background-image: linear-gradient( rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url('IMG_5821.JPG');
+
+#location h1, #contact h1{  font-family: "Arial Black";font-size:3em; color:white;}
+#location h4{  font-family: "Arial Black";font-size:2em;}
+
+textarea{border:.2em solid black;background-color:lightblue;}
+input[type=submit]{background-color:black; color:white;border:none;}
+#about{
+    background-image: linear-gradient( rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url('IMG_5821.JPG');
     width: 100%;
     height: 100%;
-    padding-top: 9em;
+    padding-top: 1em;
     font-size: 3em;
+    color:white;
+    font-family: "Arial Black";
+    text-transform: uppercase;
+    text-align: center;
 }
 
 #contact {
-    color: black;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('bunny.jpg');
+    background-size: cover;
+    width:100%;
+    height:100%;
+
     text-align: center;
-    font-size: 4em;
+    /*font-size: 4em;
     font-family: "Arial Black";
+    text-transform: uppercase;*/
 }
+
+
 
 #div {
     background-image: url('IMG_5821.jpg');
@@ -144,7 +204,7 @@ a:visited {
 }
 
 
-/*R E S P O N S I V E   D E S I G N  */
+/*R E S P O N S I V E   D E S I G N  
 
 
 
