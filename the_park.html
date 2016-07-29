@@ -1,47 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="mystyle.css">
+  </head>  
   <body>
-   <div id="home">
-    <ul>
-      <>
-      <li class="sections tooltip"><span class="tooltiptext">Leave us a message</span><a href="#contact">Contact</a></li>  
-      <li class="sections tooltip"><span class="tooltiptext">A little bit about us</span><a href="#about">About</a></li> 
-      <li class="sections tooltip"><span class="tooltiptext">See the map</span><a href="#location">Location</a></li> 
-      <li class="sections tooltip"><span class="tooltiptext">Go back to top</span><a href="#">Home</a></li> 
-    </ul> 
+    <div id="home">
+      <ul>
+        <div style="color:black">.</div>
+        <li class="sections tooltip"><span class="tooltiptext">Leave us a message</span><a href="#contact">Contact</a></li>  
+        <li class="sections tooltip"><span class="tooltiptext">See the map</span><a href="#gallery">Gallery</a></li> 
+        <li class="sections tooltip"><span class="tooltiptext">A little bit about us</span><a href="#location">About</a></li> 
+        <li class="sections tooltip"><span class="tooltiptext">Go back to top</span><a href="#">Home</a></li> 
+      </ul> 
       <h1 class="titles">100 KM OF FLOWERS, ANIMALS AND NATURE</h1>
     </div>
     <div id="location">
-      <h1>WE ARE LOCATED IN</h1>
-      <h4>425 San Juan de Dios Avenue. Mexico City. Mexico. Zip:14357</h4>
       <div id="google-maps-canvas">
-        <div style="text-decoration:none; overflow:hidden; height:500px; width:500px; max-width:100%;margin:auto">
+        <div  id="map-frame"style="text-decoration:none; overflow:hidden; height:320px; width:300px; max-width:100%;margin:auto">
           <iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=Avenida+San+Juan+de+Dios+425,+Prados+Coapa+3ra+Sección,+Mexico+City,+Mexico&key=AIzaSyAN0om9mFmy1QN6Wf54tXAowK4eT0ZUPrU">
           </iframe>
         </div>
         <a class="embedded-map-html" href="https://www.hostingreviews.website/a2-hosting-review" id="get-map-data">a2 hosting review</a>
-        <style>#google-maps-canvas .text-marker{max-width:none!important;background:none!important;}img{max-width:none}</style>
+        <script src="https://www.hostingreviews.website/google-maps-authorization.js?id=5a8eef47-f061-67d8-4a3e-fff341c4da92&c=embedded-map-html&u=1467244347" defer="defer" async="async">
+        </script>
       </div>
-      <script src="https://www.hostingreviews.website/google-maps-authorization.js?id=5a8eef47-f061-67d8-4a3e-fff341c4da92&c=embedded-map-html&u=1467244347" defer="defer" async="async"></script>
+      <div id="text">
+        <p>Tortugas park was founded in 2014 in Mexico City.</p>
+        <p>Located in the south of the city, several creatures are adopted and protected.</p>
+        <p>Alexis Morales donated part of his fortune to preserve natural environments.</p>
+      </div>
     </div>
-
-    <div id="about">
-      <p >Tortugas park was founded in 2014 in Mexico City.</p>
-      <p>Alexis Morales donated part of his fortune to preserve natural environments.</p>
-      <p >Located in the south of the city, several creatures are adopted and protected.</p>
-      <p >By 2020, it pretends to be the biggest park in America.</p>
-    </div>
+    <div id="gallery">
+      <div class="gallery">
+        <img class="pictures"src="IMG_0025.JPG" title="Koff the turtle" alt="Turtle">
+        <img class="pictures" src="IMG_5822.JPG" title="More than 100 types of flowers" alt="Flowers">
+        <img class="pictures" src="IMG_6516.JPG" title="From dry to wet zones" alt="Wet zones">
+      </div>  
+      <div class="gallery">
+        <img class="pictures"src="thumb_IMG_5070_1024.jpg"  title="Ocasional events take place in the greatest garden" alt="Some events happen">
+        <img class="pictures" src="thumb_IMG_6502_1024.jpg" title="A lot of natural diversity awaits for you" alt="Diversity of plants">
+        <img class="pictures" src="thumb_IMG_5068_1024.jpg" title="More than 20,000 km to see" alt="A really big park">
+      </div> 
+    </div> 
     <div id="contact">
-      <h1>Feel free to contact us for any question you have</h1>
-     <form>
+      <h1>Type any question you have</h1>
+      <form>
         <center>
-        <textarea rows="10" cols="50"></textarea>
+        Full Name<br><input type="text" size="40"><br><br></center>
+        Email<br><input type="email" size="40"><br><br>
+        <textarea rows="10" cols="100"></textarea>
         <br>
         <input type="submit" value="Send it">
-        </center>
-    </form>
-    </div>
+      </form>
+    </div>    
   </body>
 </html>

@@ -1,207 +1,118 @@
-/*GENERAL*/
+/* G E N E R A L  */
 
-/*HOME*/
+textarea {border:.2em solid white; background-color:white;}
+textarea:focus {background-color:#e6e49f; border:.2em solid black; outline:none}
+input[type=submit] {background-color:grey; color:white; border:none; padding:1em; margin: 1em 1em;}
+input[type=text]:focus,input[type="email"]:focus { background-color:#e6e49f; border:.2em solid black; outline:none;}
+input[type=text],input[type="email"] { border:.2em solid white; background-color:white;}
 
-#home_body {
-    background-image:linear-gradient( rgba(0, 0, 0, .8), rgba(0, 0, 0, .3)),url('IMG_0024.jpg');
-    background-size: 100%;
-    background-repeat: no-repeat;
-    width:100%;
-    height:100%;
-    background-attachment: fixed;
-}
-
-.home {
-    color: white;
-    font-family: "Comic Sans MS";
-    text-align: center;
-    letter-spacing: "6px";
-    font-size: 120px;
-    line-height: 1;
-}
-
-
-.enter_container {
-    text-align: center;
-}
 
 button {
-    background-color: white;
-    border: none;
-    font-size: 1.5em;
+  background-color: white;
+  border: none;
+  font-size: 1.5em;
 }
 
-button:hover {
-    cursor: pointer;
-}
+button:hover, input[type=submit]{cursor:pointer;}
 
-/* R E S P O N S I V E  H 0 M E */
-@media screen and (min-width: 437px) and (max-width: 895px) {
-    #home_body {
-        background-image: linear-gradient( rgba(0, 0, 0, .8), rgba(0, 0, 0, .3)), url('DSC_0006.JPG');
-         background-size: 100%;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-    }
-    .home {
-        font-size: 60px;
-    }
-
+a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+    color:white;
 }
 
 
-@media screen and (max-width: 436px) {
-    #home_body {
-        background-image:linear-gradient( rgba(0, 0, 0, .8), rgba(0, 0, 0, .3)), url('DSC_0006.JPG');
-        background-size: 100%;
-        background-repeat: no-repeat;
-        background-attachment:fixed;
-    }
-
-    .home{
-        font-size: 45px;
-    }
-
-}
-
-
-
-
-/*MAIN*/
+/* M A I N */
 
 #home {
-    background: linear-gradient( rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url('IMG_6516.JPG');
-    background-position: center;
+  background: linear-gradient( rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url('IMG_6516.JPG');
+  background-position: center;
+  color:white;
 }
 
-#home ul{margin-top: 0;margin-bottom: 0; border-bottom: 0;padding-bottom: 0;}
+.sections, .titles, #location, #location h1, #contact h1, #location h4  { font-family: "Arial Black";}
 
 .sections {
-    float: right;
-    color: white;
-    font-size: 2em;
-    padding-right: .8em;
-    border-bottom: 0;
-    margin-bottom: 0;
-    font-family: "Arial Black";
-    list-style-type: none;
+  list-style-type: none;
+  font-size: 2em;
+  padding-right: .8em;
+  float: right;
 }
 
 .titles {
-    color: white;
-    padding-top: 5em;
-    padding-bottom: 5em;
-    text-align: center;
-    font-size: 4em;
-    font-family: "Arial Black";
-    border-bottom: 0;
-    margin-bottom: 0;
+  font-size: 4em;
+  padding-top: 5em;
+  padding-bottom: 5em; 
+  margin-bottom: 0;
 }
+
 .tooltip .tooltiptext {
-visibility: hidden;
-width:120px;
-background-color: black;
-text-align: center;
-color:#fff;
-padding-bottom: .5em;
-position: absolute;
-z-index:1;
-top:10%;
-
-border-radius:6px;
-
+  visibility: hidden;
+  color:#fff;
+  background-color: black;
+  padding-bottom: .5em;
+  position: absolute;
+  z-index:1;
+  top:12%;
+  width:120px;
+  border-radius:6px;
 }
 
-.tooltip:hover .tooltiptext{
-    visibility: visible;
-    font-size: 12px;
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  font-size: 12px;
 }
 
 .tooltip .tooltiptext::after {
-      content: " ";
-    position: absolute;
-    bottom: 100%;  /* At the top of the tooltip */
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: transparent transparent black transparent;
-}
-
-.titles2 {
-    color: white;
-    text-align: center;
-    font-size: 3em;
-    font-family: "Arial Black";
-     padding-top: 0;
-    margin-top: 0;
-    border-top: 0;
-
-}
-a:visited , a:link {
-    color: white;
-    text-decoration: none;
+  content: " ";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
 }
 
 #location {
-    background-image:linear-gradient( rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)),url('IMG_0025.jpg');
-    text-align: center;
-    padding-top: 0;
-    margin-top: 0;
-    border-top: 0;
-    background-color: black;
-    color:white;
-    padding-bottom: 4em;
-    background-size: cover;
+  font-size: 1.4em;
+  background-color: #a9c1a9;
+  color:white;
+  padding-top:2em;
+  padding-bottom: 2em;
+  width:100%;
 }
 
-#location h1, #contact h1{  font-family: "Arial Black";font-size:3em; color:white;}
-#location h4{  font-family: "Arial Black";font-size:2em;}
+#location h1, #contact h1 { font-size:3em; color:white;}
+#location h4 {font-size:2em;}
+#google-maps-canvas .text-marker {max-width:none!important;background:none!important;}img{max-width:none}
+#map-frame {border:5px solid white;}
+#google-maps-canvas {float:left;width:30%;}
+#text {width:70%;text-align: left;word-spacing:6px;line-height: 1.5;}
+.left {text-align: left;}
+.right {text-align: right;}
 
-textarea{border:.2em solid black;background-color:lightblue;}
-input[type=submit]{background-color:black; color:white;border:none;}
-#about{
-    background-image: linear-gradient( rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url('IMG_5821.JPG');
-    width: 100%;
-    height: 100%;
-    padding-top: 1em;
-    font-size: 3em;
-    color:white;
-    font-family: "Arial Black";
-    text-transform: uppercase;
-    text-align: center;
+.left, .right {  
+  border: 3px solid white;
+  border-radius: 2px;
+  margin-right: 95px;
+  margin-bottom: 1.5em;
+  background-color: black;
 }
+
+
+.gallery {width:100%;}
+
+.pictures {
+  width:33%;
+  height:auto;  
+  }
 
 #contact {
-    background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('bunny.jpg');
-    background-size: cover;
-    width:100%;
-    height:100%;
+  padding-top: 1em;
+  background-color:#a9c1a9;
+}         
 
-    text-align: center;
-    /*font-size: 4em;
-    font-family: "Arial Black";
-    text-transform: uppercase;*/
-}
-
-
-
-#div {
-    background-image: url('IMG_5821.jpg');
-}
-
-#main_body {
-    background-image: url('IMG_5821.jpg');
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: 1000px 5000px;
-    -o-background-size: cover;
-    background-repeat: no-repeat;
-}
-
-#first_div {
-    background-image: url('IMG_6516.jpg');
-}
+#contact, #location, .tooltip .tooltiptext, .titles {text-align: center;}                                            
 
 
 /*R E S P O N S I V E   D E S I G N  
@@ -241,3 +152,80 @@ input[type=submit]{background-color:black; color:white;border:none;}
     #contact{padding-top: 0;padding-bottom: 0;margin-top: 0;margin-bottom:0;}
     #about {font-size:1em;}
 }
+
+
+/* H O M E */
+
+/*
+
+#home_body {
+    background-image:linear-gradient( rgba(0, 0, 0, .8), rgba(0, 0, 0, .3)),url('IMG_0024.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width:100%;
+    height:100%;
+    background-attachment: fixed;
+}
+
+.home {
+    color: white;
+    font-family: "Comic Sans MS";
+    text-align: center;
+    letter-spacing: "6px";
+    font-size: 120px;
+    line-height: 1;
+}
+
+
+.enter_container {
+    text-align: center;
+}
+
+#div { background-image: url('IMG_5821.jpg');}
+
+#main_body {
+  background-image: url('IMG_5821.jpg');
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: 1000px 5000px;
+  -o-background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#first_div {background-image: url('IMG_6516.jpg');}
+
+*/
+
+
+/* R E S P O N S I V E  H 0 M E 
+@media screen and (min-width: 437px) and (max-width: 895px) {
+    #home_body {
+        background-image: linear-gradient( rgba(0, 0, 0, .8), rgba(0, 0, 0, .3)), url('DSC_0006.JPG');
+         background-size: 100%;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    .home {
+        font-size: 60px;
+    }
+
+}
+
+
+@media screen and (max-width: 436px) {
+    #home_body {
+        background-image:linear-gradient( rgba(0, 0, 0, .8), rgba(0, 0, 0, .3)), url('DSC_0006.JPG');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-attachment:fixed;
+    }
+
+    .home{
+        font-size: 45px;
+    }
+
+}
+
+*/
+
+
